@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Rondo — Sportsbar & Restaurant',
-  description: 'Live-Sport, ehrliches Essen und die besten Abende der Stadt. Willkommen im Rondo.',
+  description: 'Rondo Sportsbar in Hanau: Live-Sport, ehrliches Essen, Billard, Kicker und Darts. Jetzt Platz reservieren.',
   generator: 'Next.js',
   icons: {
     icon: [

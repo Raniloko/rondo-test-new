@@ -24,8 +24,7 @@ export default function Home() {
     <main id="home" className="site-shell">
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Rondo Sportsbar Startseite">
-          <span className="brand-badge">R</span>
-          <span className="brand-name">RONDO<span>.</span></span>
+          <img className="brand-logo" src="/images/rondo-logo-outlined.png" alt="Rondo Sportsbar" />
         </a>
         <nav className={`site-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Hauptnavigation">
           {navItems.map((item) => <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>{item.label}</a>)}

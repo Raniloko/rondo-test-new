@@ -52,9 +52,12 @@ export default function Home() {
       </section>
 
       <section id="activities" className="activities-section">
-        <div className="section-heading"><p className="section-index">02 <span>Time for action</span></p><h2>Mehr als<br /><i>nur zuschauen.</i></h2><p className="body-copy">Buche dir und deinen Freunden einen Platz auf einem unserer Billardtische, Tischkicker oder Elektronik-Darts.</p></div>
+        <div className="section-heading"><p className="section-index">02 <span>Time for action</span></p><h2>Mehr als<br /><i>nur zuschauen.</i></h2><p className="body-copy">Buche dir und deinen Freunden einen Platz auf einem unserer Billardtische, Tischkicker oder Elektronik-Darts. Salitos kaltstellen, Spiel aussuchen, loslegen.</p></div>
         <div className="activity-grid">{activities.map((activity, index) => <article className="activity-card" key={activity.title}><img src={activity.image} alt={`${activity.title} in der Rondo Sportsbar`} /><div className="activity-meta"><span>0{index + 1}</span><div><h3>{activity.title}</h3><p>{activity.detail}</p></div><ArrowUpRight size={20} /></div></article>)}</div>
+        <div className="activity-cta"><strong>Billard & Lounge</strong><span>VIP-Feeling, Salitos und dein eigener Tisch.</span><a className="underlined-link" href="#reservation">Tisch sichern <ArrowUpRight size={16} /></a></div>
       </section>
+
+      <section id="menu" className="menu-section content-grid"><p className="section-index">03 <span>Food & Drinks</span></p><div><h2>Deine Karte.<br /><i>Deine Klassiker.</i></h2><div className="menu-highlights"><div><span>01</span><strong>Rondo Burger</strong><em>14,90 €</em></div><div><span>02</span><strong>Loaded Fries</strong><em>7,90 €</em></div><div><span>03</span><strong>Salitos & Longdrinks</strong><em>ab 4,50 €</em></div></div><a className="underlined-link" href="#reservation">Komplette Karte & Reservierung <ArrowUpRight size={16} /></a></div></section>
 
       <section id="reservation" className="reservation-section"><div><p className="kicker dark"><span /> Reservierung im Rondo</p><h2>Dein Platz.<br /><i>Dein Spiel.</i></h2></div><div className="reservation-copy"><p>Du möchtest die Matches deiner Lieblingsmannschaft auf unserem 140-Zoll-LED-Screen und auf unseren 8 weiteren Screens genießen? Dann reserviere dir jetzt deinen Platz.</p><a className="dark-button" href="tel:+4961819698950">Jetzt reservieren <ArrowUpRight size={17} /></a></div></section>
 

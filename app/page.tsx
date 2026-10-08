@@ -57,7 +57,7 @@ export default function Home() {
           <p className="hero-lede">Leckeres Essen, gute Laune und Live-Sport auf dem großen Screen. Komm rein, fühl dich wohl.</p>
           <div className="hero-actions"><a className="yellow-button" href="#reservation">Platz sichern <ArrowUpRight size={17} /></a><a className="underlined-link" href="#about">Entdecke Rondo <ChevronDown size={16} /></a></div>
         </div>
-        <div className="hero-image-wrap"><img src="/images/video-preview.jpg" alt="Atmosphäre und Live-Sport in der Rondo Sportsbar" /><div className="hero-image-overlay"><span>Live-Sport</span><strong>Come in.<br /><i>Feel good.</i></strong></div><div className="hero-scroll">01 <span /></div></div>
+        <div className="hero-image-wrap"><img src="/images/rondo-hero.jpg" alt="Innenraum der Rondo Sportsbar mit Bar, Sitzplätzen und Live-Sport" /></div>
       </section>
 
       <section id="about" className="intro-section content-grid">

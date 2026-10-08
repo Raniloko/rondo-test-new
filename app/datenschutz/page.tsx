@@ -1,0 +1,5 @@
+import Link from 'next/link'
+
+export default function Datenschutz() {
+  return <main className="legal-page"><Link href="/" className="legal-back">← Zurück zu Rondo</Link><p className="kicker dark"><span /> Rechtliches</p><h1>Datenschutz</h1><section><h2>Hinweise zum Datenschutz</h2><p>Wir behandeln deine personenbezogenen Daten vertraulich und verarbeiten sie nur im Rahmen der gesetzlichen Datenschutzbestimmungen.</p><h2>Kontaktaufnahme</h2><p>Wenn du uns telefonisch oder per E-Mail kontaktierst, werden deine Angaben ausschließlich zur Bearbeitung deiner Anfrage verwendet und nicht ohne Rechtsgrundlage an Dritte weitergegeben.</p><h2>Externe Inhalte</h2><p>Beim Aufruf externer Dienste wie Google Maps, Instagram oder eingebetteter Inhalte gelten zusätzlich die Datenschutzbestimmungen der jeweiligen Anbieter.</p><h2>Deine Rechte</h2><p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Widerspruch gegen die Verarbeitung deiner Daten.</p></section></main>
+}

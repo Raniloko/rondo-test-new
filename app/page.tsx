@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ArrowUpRight, ChevronDown, Menu, X } from 'lucide-react'
+import { ArrowUpRight, ChevronDown } from 'lucide-react'
 
 const navItems = [
   { label: 'Startseite', href: '#home' },
@@ -28,13 +28,19 @@ export default function Home() {
           <img className="brand-logo" src="/images/rondo-logo-outlined.png" alt="Rondo Sportsbar" />
         </a>
         <nav className={`site-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Hauptnavigation">
-          {navItems.map((item) => <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>{item.label}</a>)}
+          <div className="menu-links">
+            {navItems.map((item, index) => <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)}><span>0{index + 1}</span>{item.label}</a>)}
+          </div>
+          <div className="menu-footer">
+            <div><span>Besuch uns</span><p>Otto-Hahn-Str. 18<br />63456 Hanau</p><a href="tel:+4961819698950">+49 6181 9698950</a></div>
+            <a className="yellow-button" href="#reservation" onClick={() => setMenuOpen(false)}>Platz sichern <ArrowUpRight size={17} /></a>
+          </div>
         </nav>
         <div className="header-actions">
           <a className="social-link" href="https://www.instagram.com/" aria-label="Rondo auf Instagram"><span className="social-word">IG</span></a>
           <a className="outline-button small" href="#reservation">Reservierung <ArrowUpRight size={15} /></a>
         </div>
-        <button className="menu-toggle" aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
+        <button className={`menu-toggle ${menuOpen ? 'is-open' : ''}`} aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button>
       </header>
 
       <section className="hero-section" aria-labelledby="hero-title">

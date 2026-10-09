@@ -67,10 +67,10 @@ export default function WeihnachtsfeierPage() {
         <button className={`menu-toggle ${menuOpen ? 'is-open' : ''}`} aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button>
       </header>
 
-      <section className="relative isolate overflow-hidden border-b border-white/10">
-        <Image src="/images/rondo-hero.jpg" alt="Atmosphärischer Innenraum der Rondo Sportsbar mit Bar und großen Screens" fill priority className="object-cover object-center opacity-45" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0b0d0c] via-[#0b0d0c]/80 to-[#0b0d0c]/30" />
-        <div className="relative mx-auto grid min-h-[650px] max-w-7xl items-center px-5 py-20 sm:px-8 lg:grid-cols-[1.05fr_.95fr] lg:py-28">
+      <section className="relative isolate flex min-h-[calc(100svh-72px)] items-center overflow-hidden border-b border-white/10 md:min-h-[calc(100svh-92px)]">
+        <Image src="/images/rondo-hero.jpg" alt="Atmosphärischer Innenraum der Rondo Sportsbar mit Bar und großen Screens" fill priority sizes="100vw" className="object-cover object-[58%_center] opacity-55 sm:object-center" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0b0d0c]/95 via-[#0b0d0c]/72 to-[#0b0d0c]/25" />
+        <div className="relative mx-auto w-full max-w-7xl px-5 py-24 sm:px-8 sm:py-28 lg:py-32">
           <div className="max-w-3xl">
             <SectionLabel>Firmenweihnachtsfeiern in Hanau</SectionLabel>
             <h1 className="max-w-3xl text-5xl font-semibold leading-[.98] tracking-[-.04em] sm:text-7xl lg:text-[6.8rem]">Die Weihnachtsfeier, über die Ihr Team noch spricht.</h1>

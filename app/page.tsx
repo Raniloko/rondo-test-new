@@ -36,7 +36,7 @@ export default function Home() {
         </a>
         <nav className={`site-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Hauptnavigation">
           <div className="menu-links">
-            {navItems.map((item, index) => <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)}><span>0{index + 1}</span>{item.label}</a>)}
+            {navItems.map((item) => <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>{item.label}</a>)}
           </div>
           <div className="menu-footer">
             <div><span>Besuch uns</span><p>Otto-Hahn-Str. 18<br />63456 Hanau</p><a href="tel:+4961819698950">+49 6181 9698950</a></div>
@@ -44,7 +44,6 @@ export default function Home() {
           </div>
         </nav>
         <div className="header-actions">
-          <a className="social-link" href="https://www.instagram.com/" aria-label="Rondo auf Instagram"><span className="social-word">IG</span></a>
           <a className="outline-button small" href="#reservation">Reservierung <ArrowUpRight size={15} /></a>
         </div>
         <button className={`menu-toggle ${menuOpen ? 'is-open' : ''}`} aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button>

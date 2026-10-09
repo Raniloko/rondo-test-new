@@ -52,36 +52,20 @@ export default function WeihnachtsfeierPage() {
 
   return (
     <main id="top" className="min-h-screen bg-[#0b0d0c] text-white">
-      <header className="sticky top-0 z-30 border-b border-white/10 bg-[#0b0d0c]/90 px-5 py-4 backdrop-blur-xl sm:px-8">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6">
-          <Link href="/" className="shrink-0" aria-label="RondoSport Startseite"><Image src="/images/rondo-logo-outlined.png" alt="RondoSport" width={150} height={51} className="h-auto w-32 sm:w-36" /></Link>
-          <nav className="hidden items-center gap-7 text-sm text-[#aeb7ae] lg:flex" aria-label="Seitennavigation">
-            <a href="#vorteile" className="transition hover:text-white">Vorteile</a><a href="#ablauf" className="transition hover:text-white">Ablauf</a><a href="#verpflegung" className="transition hover:text-white">Essen & Getränke</a><a href="#faq" className="transition hover:text-white">FAQ</a>
-          </nav>
-          <div className="flex items-center gap-2 sm:gap-3">
-            <a href="#anfrage" className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#d5f044] px-4 py-2.5 text-xs font-bold text-[#0b0d0c] transition hover:bg-[#e6fa83] sm:px-5 motion-safe:animate-pulse">Anfrage senden <ArrowRight size={15} /></a>
-            <button type="button" aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)} className="relative z-50 grid size-11 shrink-0 place-items-center rounded-full border border-white/20 bg-white/5 text-white transition hover:border-[#d5f044]" title={menuOpen ? 'Menü schließen' : 'Menü öffnen'}>
-              <span className={`absolute h-px w-5 bg-current transition-transform duration-300 ${menuOpen ? 'rotate-45' : '-translate-y-1.5'}`} />
-              <span className={`absolute h-px w-5 bg-current transition-transform duration-300 ${menuOpen ? '-rotate-45' : 'translate-y-1.5'}`} />
-            </button>
+      <header className="site-header">
+        <Link className="brand" href="/" aria-label="Rondo Sportsbar Startseite"><Image className="brand-logo" src="/images/rondo-logo-outlined.png" alt="Rondo Sportsbar" width={150} height={51} /></Link>
+        <nav className={`site-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Hauptnavigation">
+          <div className="menu-links">
+            {[['Startseite', '/'], ['Vorteile', '#vorteile'], ['Ablauf', '#ablauf'], ['Essen & Getränke', '#verpflegung'], ['Anfrage', '#anfrage'], ['FAQ', '#faq']].map(([label, href]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}
           </div>
-        </div>
-      </header>
-
-      <div className={`fixed inset-0 z-40 transition-[visibility] duration-300 ${menuOpen ? 'visible' : 'invisible'}`} aria-hidden={!menuOpen}>
-        <button type="button" aria-label="Menü schließen" onClick={() => setMenuOpen(false)} className={`absolute inset-0 bg-black/30 transition-opacity duration-300 ${menuOpen ? 'opacity-100' : 'opacity-0'}`} />
-        <nav aria-label="Mobiles Menü" className={`absolute right-0 top-0 flex h-full w-[min(88vw,27rem)] flex-col overflow-y-auto bg-[#f3f3ec] px-7 pb-8 pt-28 text-[#0b0d0c] shadow-2xl transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] sm:px-10 ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-          <button type="button" aria-label="Menü schließen" onClick={() => setMenuOpen(false)} className="absolute right-6 top-5 grid size-11 place-items-center rounded-full border border-[#0b0d0c]/15 transition hover:bg-[#d5f044]" title="Menü schließen"><span className="absolute h-px w-5 rotate-45 bg-[#0b0d0c]" /><span className="absolute h-px w-5 -rotate-45 bg-[#0b0d0c]" /></button>
-          <p className="text-xs font-semibold uppercase tracking-[.18em] text-[#59635b]">RondoSport · Weihnachtsfeier</p>
-          <div className="mt-10 flex flex-col gap-5 text-2xl font-semibold tracking-tight">
-            {[['Hero', '#top'], ['Vorteile', '#vorteile'], ['Ablauf', '#ablauf'], ['Essen & Getränke', '#verpflegung'], ['Anfrage', '#anfrage'], ['FAQ', '#faq']].map(([label, href]) => <a key={label} href={href} onClick={() => setMenuOpen(false)} className="border-b border-[#0b0d0c]/10 pb-4 transition hover:pl-2 hover:text-[#59635b]">{label}</a>)}
-          </div>
-          <div className="mt-auto border-t border-[#0b0d0c]/15 pt-6">
-            <p className="text-sm leading-6 text-[#59635b]">Otto-Hahn-Straße 18<br />63456 Hanau</p>
-            <a href="#anfrage" onClick={() => setMenuOpen(false)} className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#d5f044] px-5 py-3.5 text-sm font-bold text-[#0b0d0c] transition hover:bg-[#e6fa83]">Weihnachtsfeier anfragen <ArrowRight size={16} /></a>
+          <div className="menu-footer">
+            <div><span>Besuch uns</span><p>Otto-Hahn-Str. 18<br />63456 Hanau</p></div>
+            <a className="yellow-button" href="#anfrage" onClick={() => setMenuOpen(false)}>Weihnachtsfeier anfragen <ArrowRight size={17} /></a>
           </div>
         </nav>
-      </div>
+        <div className="header-actions"><a className="outline-button small" href="#anfrage">Anfrage senden <ArrowRight size={15} /></a></div>
+        <button className={`menu-toggle ${menuOpen ? 'is-open' : ''}`} aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button>
+      </header>
 
       <section className="relative isolate overflow-hidden border-b border-white/10">
         <Image src="/images/rondo-hero.jpg" alt="Atmosphärischer Innenraum der Rondo Sportsbar mit Bar und großen Screens" fill priority className="object-cover object-center opacity-45" />

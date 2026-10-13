@@ -1,0 +1,150 @@
+MASTER PROMPT — RondoSport WordPress-Kopie mit UiChemy
+
+Erstelle eine vollständige WordPress-Version der Website aus diesem GitHub-Repository:
+https://github.com/Raniloko/rondo-test-new
+
+Die bestehende Website soll als visuelle und inhaltliche Referenz dienen. Erstelle keine einfache statische Kopie, sondern eine sauber strukturierte, responsive WordPress-Website, die später in WordPress gepflegt und erweitert werden kann.
+
+ZIEL
+Übertrage das aktuelle Design der Rondo Sportsbar möglichst originalgetreu nach WordPress. Die Website soll unter WordPress funktionieren und mit Elementor oder einem vergleichbaren visuellen Builder editierbar sein.
+
+DESIGN UND MARKE
+Übernimm vollständig:
+- das aktuelle Rondo-Sportsbar-Branding
+- das offizielle Rondo-Logo als transparentes PNG
+- die Farbwelt mit Schwarz, dunklem Anthrazit, Weiß und Neon-Lime/Grün
+- Typografie und visuelle Hierarchie
+- Hero-Komposition und Bildsprache
+- fixierte Navigationsleiste
+- Hamburger-Menü mit Slide-in-Animation von rechts
+- Bilder und Bildzuschnitte
+- Abstände, Karten, Buttons und Hover-Effekte
+- responsive Gestaltung für Desktop, Tablet und Mobile
+
+Verwende keine orange-blaue Weihnachtsfarbenwelt und kein generisches Restaurant- oder Weihnachts-Template.
+
+SEITEN
+Erstelle mindestens diese Seiten:
+
+1. STARTSEITE
+- Hero-Bereich mit bestehendem Rondo-Bildmaterial
+- Text: „Rondo loves sports.“
+- Untertext: „Leckeres Essen, gute Laune und Live-Sport auf dem großen Screen. Komm rein, fühl dich wohl.“
+- CTA „Platz sichern“
+- CTA „Entdecke Rondo“
+- Über-uns-Bereich
+- Aktivitäten: Live-Sport, Billard, Kicker und Dart
+- Speisekarten-Bereich
+- Reservierungsbereich
+- Öffnungszeiten
+- Galerie
+- Footer mit Adresse, Kontakt, Impressum und Datenschutz
+
+2. WEIHNACHTSFEIER
+URL-Slug: /weihnachtsfeier
+- exakt dasselbe Header- und Navigationsdesign wie auf der Startseite
+- gleiches Logo, gleiche fixierte Navigation und gleiches Hamburger-Menü
+- vollflächiger Hero-Bereich mit passendem Rondo-Innenraumfoto
+- Anfrage-CTA für Firmenweihnachtsfeiern
+- Nutzenkarten
+- Ablauf-Timeline
+- Essen und Getränke
+- Exklusive Firmenfeier
+- Anlass-Kacheln
+- Anfrageformular
+- FAQ-Akkordeon
+- Abschluss-CTA
+- Footer
+
+NAVIGATION
+Die Navigation muss auf allen Seiten identisch funktionieren:
+- Desktop: fixierte, breite Navigationsleiste
+- Mobile und Tablet: Hamburger-Menü mit zwei dünnen Linien
+- Beim Öffnen animieren die Linien zu einem X
+- Das Menü fährt geschmeidig von rechts nach links ein
+- Helles Overlay im Rondo-Stil
+- Kein Scrollen des Hintergrunds, solange das Menü geöffnet ist
+- Keine abgeschnittenen oder gequetschten Texte
+- Menü schließt nach Klick auf einen Navigationspunkt automatisch
+- Tastaturbedienung und ARIA-Labels berücksichtigen
+
+WORDPRESS-STRUKTUR
+Baue die Seite langfristig wartbar auf:
+- globale Header-Komponente
+- globaler Footer
+- wiederverwendbare Hero-Komponente
+- wiederverwendbare CTA-Komponente
+- wiederverwendbare Karten-Komponente
+- wiederverwendbares FAQ-Akkordeon
+- zentrale globale Farben und Typografie
+- editierbare Texte und Bilder
+- keine Inhalte unnötig fest im Code verstecken
+- WordPress Customizer, globale Theme-Einstellungen oder ACF-Felder verwenden, falls verfügbar
+- möglichst ein Child-Theme oder ein kompatibles Block-/Elementor-Theme verwenden
+
+BILDER UND ASSETS
+Nutze bevorzugt die vorhandenen Bilder und Assets aus dem Repository. Übertrage sie in die WordPress-Mediathek oder binde sie sauber über die Theme-Struktur ein.
+
+Besonders wichtig:
+- offizielles Rondo-Logo verwenden
+- transparenter Hintergrund beim Logo
+- Hero-Bilder vollständig und responsiv darstellen
+- wichtige Inhalte wie Screens, Bar und Billardtische nicht abschneiden
+- Desktop, Tablet und Mobile visuell prüfen
+- Alt-Texte für Barrierefreiheit ergänzen
+
+FORMULAR
+Das Anfrageformular für Weihnachtsfeiern soll enthalten:
+- Vorname und Nachname
+- Unternehmen
+- geschäftliche E-Mail-Adresse
+- Telefonnummer
+- Anlass
+- Wunschtermin
+- alternativer Termin
+- ungefähre Personenzahl
+- Verpflegung
+- Buchungswunsch
+- weitere Wünsche
+- Datenschutz-Checkbox
+
+Das Formular darf keine falsche Erfolgsmeldung anzeigen. Verwende Contact Form 7, WPForms, Fluent Forms oder eine vergleichbare WordPress-Lösung. Markiere klar, wo Empfänger-E-Mail-Adresse und tatsächlicher Formularversand konfiguriert werden müssen.
+
+RECHTLICHE SEITEN
+Erstelle Links und Seiten für:
+- Impressum
+- Datenschutz
+
+Verwende keine erfundenen Telefonnummern, E-Mail-Adressen, Preise, Kapazitäten oder Öffnungszeiten. Nicht bestätigte Angaben müssen als individuell abzustimmende Informationen formuliert werden.
+
+SEO
+Optimiere natürlich für:
+- Weihnachtsfeier Hanau
+- Firmenweihnachtsfeier Hanau
+- Firmenfeier Hanau
+- Firmenveranstaltung Hanau
+- Weihnachtsfeier Hanau-Steinheim
+- Location für Firmenfeier Hanau
+
+Seitentitel der Weihnachtsfeier:
+„Weihnachtsfeier in Hanau | RondoSport“
+
+Meta-Description:
+„Planen Sie Ihre Firmenweihnachtsfeier in Hanau bei RondoSport. À la carte oder Gruppenangebot, exklusive Buchung möglich. Jetzt unverbindlich anfragen.“
+
+QUALITÄTSSICHERUNG
+Prüfe besonders:
+- keine überlappenden Texte
+- keine Texte außerhalb des Bildschirms
+- keine abgeschnittenen Buttons
+- keine horizontalen Überläufe
+- keine gequetschten Layouts
+- ausreichende Kontraste
+- funktionierende Links und Anker
+- funktionierendes Hamburger-Menü
+- korrektes Verhalten bei 375px, 768px, 1024px und 1440px Breite
+- schnelle Ladezeiten und optimierte Bilder
+- semantische HTML-Struktur
+- gute Tastaturbedienbarkeit
+
+Das Ergebnis soll wie eine professionelle WordPress-Version der bestehenden Rondo-Sportsbar-Website wirken – nicht wie ein neues Template und nicht wie eine generische Kopie. Bewahre Markenidentität, Bildsprache, Typografie und Navigation möglichst exakt.

@@ -7,6 +7,7 @@ const navItems = [
   { label: 'Startseite', href: '#home' },
   { label: 'Über uns', href: '#about' },
   { label: 'Aktivitäten', href: '#activities' },
+  { label: 'Weihnachtsfeier', href: '/weihnachtsfeier' },
   { label: 'Speisekarte', href: '#menu' },
   { label: 'Öffnungszeiten', href: '#hours' },
   { label: 'Kontakt', href: '#contact' },
